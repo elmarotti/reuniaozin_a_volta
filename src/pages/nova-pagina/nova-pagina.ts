@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AlertController } from 'ionic-angular';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
@@ -15,11 +16,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class NovaPaginaPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private alertCtrl: AlertController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad NovaPaginaPage');
   }
 
+  presentAlert() {
+    let alert = this.alertCtrl.create({
+      title: 'Você marcou reunião!',
+      subTitle: 'Segunda 15h',
+      buttons: ['Ok']
+    });
+    alert.present();
+  }
 }
