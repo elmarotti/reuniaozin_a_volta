@@ -7,6 +7,9 @@
 <ion-header>
 
   <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
     <ion-title>Horários</ion-title>
   </ion-navbar>
 
@@ -16,14 +19,15 @@
 <ion-content padding>
 
   <ion-list>
-    <ion-item>Segunda</ion-item>
-    <ion-item>Terça</ion-item>
-    <ion-item>Quarta</ion-item>
-    <ion-item>Quinta</ion-item>
-    <ion-item>Sexta</ion-item>
-    <ion-item>Sábado</ion-item>
-    <ion-item>Domingo</ion-item>
 
-  </ion-list>
+    <button ion-item (click)="presentModal()">Segunda</button>
+    <button ion-item (click)="presentModal()">Terça</button>
+    <button ion-item (click)="presentModal()">Quarta</button>
+    <button ion-item (click)="presentModal()">Quinta</button>
+    <button ion-item (click)="presentModal()">Sexta</button>
+    <button ion-item (click)="presentModal()">Sábado</button>
+    <button ion-item (click)="presentModal()">Domingo</button>
+
+</ion-list>
 
 </ion-content>

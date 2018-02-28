@@ -9,6 +9,7 @@ import { CadastroPage } from '../pages/cadastro/cadastro';
 import { LoginPage } from '../pages/login/login';
 import { PerfilPage } from '../pages/perfil/perfil';
 import { HorarioPage } from '../pages/horario/horario';
+import { ModalPage } from '../pages/modal/modal';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -21,7 +22,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     CadastroPage,
     LoginPage,
     PerfilPage,
-    HorarioPage
+    HorarioPage,
+    ModalPage
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     CadastroPage,
     LoginPage,
     PerfilPage,
-    HorarioPage
+    HorarioPage,
+    ModalPage
 
   ],
   providers: [
