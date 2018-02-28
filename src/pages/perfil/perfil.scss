@@ -1,14 +1,18 @@
 page-perfil {
 
   h3{
-    text-align: center;
+    text-align: left;
+    padding-left: 14px;
   }
 
   ion-icon{
     float: right;
     background-color: white;
     cursor: pointer;
+  }
 
+  ion-icon:hover{
+    color: #252525;
   }
 
 }
