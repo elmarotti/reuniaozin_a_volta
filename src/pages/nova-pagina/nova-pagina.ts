@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { NovaPaginaPage } from '../nova-pagina/nova-pagina';
+
 /**
- * Generated class for the HomePage page.
+ * Generated class for the NovaPaginaPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,19 +10,16 @@ import { NovaPaginaPage } from '../nova-pagina/nova-pagina';
 
 @IonicPage()
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html',
+  selector: 'page-nova-pagina',
+  templateUrl: 'nova-pagina.html',
 })
-export class HomePage {
+export class NovaPaginaPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad HomePage');
+    console.log('ionViewDidLoad NovaPaginaPage');
   }
 
-  GoToNovaReuniao(){
-    this.navCtrl.push(NovaPaginaPage);
-  }
 }
