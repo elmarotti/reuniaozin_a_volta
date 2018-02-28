@@ -25,8 +25,7 @@ export class HorarioPage {
   }
 
   presentModal() {
-     let modal = this.modalCtrl.create(ModalPage);
-     modal.present();
+    this.navCtrl.push(ModalPage);
    }
 
 }
