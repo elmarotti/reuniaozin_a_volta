@@ -14,5 +14,15 @@
 
 
 <ion-content padding>
-
+    <ion-item>
+        <ion-label>Grupo</ion-label>
+        <ion-select [(ngModel)]="gender">
+          <ion-option value="1">Marketing</ion-option>
+          <ion-option value="2">Projetos</ion-option>
+          <ion-option value="3">GP</ion-option>
+          <ion-option value="4">Finaceiro</ion-option>
+          <ion-option value="5">Presidência</ion-option>
+        </ion-select>
+      </ion-item>
+      <button ion-button full (click)="presentAlert()">Criar reunião</button>
 </ion-content>
