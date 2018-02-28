@@ -30,6 +30,20 @@
     <ion-item> Grupo 3 <ion-icon name="close" color="danger"></ion-icon></ion-item>
   </ion-list>
 
-  <button ion-button full>Entrar em novo grupo</button>
+  <ion-item>
+    <ion-label>Entrar em novo grupo</ion-label>
+    <ion-select [(ngModel)]="new-group">
+      <ion-option value="presidencia">Presidência</ion-option>
+      <ion-option value="marketing">Marketing</ion-option>
+      <ion-option value="projetos">Projetos</ion-option>
+      <ion-option value="financeiro">Financeiro</ion-option>
+      <ion-option value="gp">Gestão de Pessoas</ion-option>
+      <ion-option value="analise">Análise</ion-option>
+      <ion-option value="criacao">Criação</ion-option>
+      <ion-option value="comercial">Comercial</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <button ion-button full>Confirmar</button>
 
 </ion-content>
